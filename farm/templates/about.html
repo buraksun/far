@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>SUFFOLK Trakya</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="suffolk trakya, suffolk satış, koyun satış, trakya koyun, suffolk, koyun sipariş /">
+<meta name="keywords" content="suffolk trakya koyun satış, koyun satış trakya, trakya koyun satış yeri / ">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstrap-css -->
+<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstrap-css -->
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all" />
+<!--// css -->
+<!-- font-awesome icons -->
+<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<!-- font -->
+<link href="//fonts.googleapis.com/css?family=Righteous&subset=latin-ext" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- //font -->
+<script src="{% static 'js/jquery-1.11.1.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/SmoothScroll.min.js' %}"></script>
+<script type="{% static 'text/javascript' %}">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+	<!-- header -->
+	<div class="header">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					<div class="w3layouts-logo">
+						<h1><a href="{% url 'index' %}">Suffolk<span>Trakya</span></a></h1>
+					</div>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li><a href="{% url 'index' %}" class="hvr-sweep-to-bottom">Anasayfa</a></li>
+							<li><a href="{% url 'hakkimizda' %}" class="hvr-sweep-to-bottom">Hakkımızda</a></li>
+							<li><a href="{% url 'galeri' %}" class="hvr-sweep-to-bottom">Galeri</a></li>
+							<li><a href="{% url 'turlerimiz' %}" class="hvr-sweep-to-bottom">Türlerimiz</a></li>          
+							<li><a href="{% url 'siparis' %}" class="hvr-sweep-to-bottom">Sipariş</a></li>
+							<li><a href="{% url 'iletisim' %}" class="hvr-sweep-to-bottom">İletişim</a></li>
+						</ul>
+					</nav>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
+		</div>
+	</div>
+	<!-- //header -->
+	<!-- banner -->
+	<div class="banner about-banner">
+		<div class="container">
+			<h2>Hakkımızda</h2>
+			<div class="agileits-line"> </div>
+		</div>
+	</div>
+	<!-- //banner -->
+	<!-- about -->
+	<!-- about-top -->
+	<div class="about-top">
+		<div class="container">
+			<div class="about-w3ls-row">
+				<div class="col-md-4 about-left">
+					<div class="about-w3layouts-pic">
+						
+					</div> 
+				</div>
+				<div class="col-md-8 about-right">
+					<h5>Suffolk Trakya Hayvancılık Çiftliği'ne Hoşgeldiniz </h5>  
+					<p>Suffolk Trakya Hayvancılık Çiftliği, 2017 yılında Kırklareli'nde kurulmuştur. Çiftliğimiz Trakya Kıvırcığı, Ile De France ve Suffolk cinsi damızlık koyun ithalatı ve üretimi alanında faaliyet göstermektedir. </p>
+					<!-- history -->
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> 
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title asd">
+									<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Sizin İçin Çalışıyoruz 
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body panel_text">
+								Kurulduğu tarihten itibaren firmamız, yabancı damızlık küçükbaş ırklarının üreticilere tanıtımını ve teminini sağlayarak hayvancılık sektörünün gelişimine büyük bir katkı sağlamıştır.
+									Bu amaç doğrultusunda firmamız, 2017 yılından bu yöne başta Ile De France, Trakya Kıvırcığı ve Suffolk ırkları olmak üzere, üst seviye genetik özelliklere sahip koyun ırklarının ithalatını yapmıştır ve yapmaya devam etmektedir.
+								</div>
+							</div>
+						</div>
+
+							
+							</div>
+						</div>
+					</div>
+					<!-- //history --> 
+				</div>
+				<div class="clearfix"> </div> 
+			</div>
+		</div>
+	</div>
+	<!-- //about-top -->
+	
+	<!-- //team -->
+	<!-- //about -->
+	<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="agileinfo_footer_grids">
+				<div class="col-md-4 agileinfo_footer_grid">
+					<div class="agile-logo">
+						<h4><a href="{% url 'index' %}">SUFFOLK<span> TRAKYA</span></a></h4>
+					</div>
+					<p>Mail ile hızlı bir şekilde iletişime geçebilirsiniz. 
+						En kısa süre içerisinde temsilcimiz size dönüş yapacaktır.</p>
+					<div class="agileinfo-social-grids">
+						<ul>
+							<li><a href="https://www.facebook.com/suffolktrakya"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="https://www.instagram.com/suffolktrakya/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://www.youtube.com/channel/UC2T2MKXqQ8P1ye1uaekHlBA"><i class="fa fa-youtube"></i></a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=05336479934"><i class="fa fa-whatsapp"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>İletişim</h3>
+					<ul class="agileinfo_footer_grid_list">
+						<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>39100 Çeşmeköy/Kırklareli, <span>Merkez/Kırklareli.</span></li>
+						<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="{% url 'iletisim' %}">tunahan.ucer@hotmail.com</a></li>
+						<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+90 (533) 647 99 34</li>
+					</ul>
+				</div>
+				<div class="col-md-4 agileinfo_footer_grid">
+					<h3>Gezinme</h3>
+					<ul class="agileinfo_footer_grid_nav">
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="{% url 'index' %}">Anasayfa</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="{% url 'hakkimizda' %}">Hakkımızda</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="{% url 'galeri' %}">Galeri</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="{% url 'turlerimiz' %}">Türlerimiz</a></li>
+						<li><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><a href="{% url 'iletisim' %}">İletişim</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3agile_footer_copy">
+				<p>&copy; 2021 Suffolk Trakya. All rights reserved | Design by Burak Güneş</a></p>
+			</div>
+		</div>
+	</div>
+	<!-- //footer -->
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>	
+</html>
